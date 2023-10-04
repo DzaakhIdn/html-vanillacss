@@ -291,6 +291,7 @@ i{
     text-align: center !important;
 }
 .surat {
+    display: flex;
     font-size: 13px;
     font-weight: 400;
     margin-top: 10px;
@@ -363,5 +364,64 @@ i{
     background-repeat: no-repeat;
     display: inline-block;
 }
+/* Media query */
+
+@media screen and (max-width: 768px)
+{
+    .container {
+        width: 45vh;
+        overflow-x: hidden;
+    }
+    .main {
+        width: auto;
+    }
+    .credit {
+        font-size: 12px;
+        max-width: 300px;
+    }
+    .hero {
+        height: 220px;
+        background-size: cover;
+        background-position: 10%;
+    }
+    .isi {
+        max-width: 340px;
+        font-size: 12px;
+    }
+    #dalil {
+        max-width: 350px;
+        font-size: 18px;
+    }
+    #arti {
+        max-width: 350px;
+        font-size: 13px;
+        padding: 0 10px 0 10px;
+    }
+    .surat {
+        text-align: center;
+        font-size: 11px;
+        margin-left: 17%;
+    }
+    .sidebar {
+        position: absolute;
+        opacity: 0;
+    }
+    .top-bar .judul {
+        font-size: 30px;
+        margin: 13px 16px auto;
+    }
+    .logo-hsi {
+        width: 40px ;
+        height: 45px;
+        background-size: cover;
+        margin: 15px 10px 0 15px;
+    }
+    .logo-idn {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+    }
+}
+
 
 
